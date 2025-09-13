@@ -1,0 +1,392 @@
+{
+  "markers": [
+    {
+      "land": "Albanië",
+      "stad": "Tirana",
+      "lat": 41.3275,
+      "lon": 19.8189,
+      "bezocht": true,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1cMxOG4w9eJb_gK2iQjDW-ISajRrIt-LD"
+    },
+    {
+      "land": "Andorra",
+      "stad": "Andorra la Vella",
+      "lat": 42.5078,
+      "lon": 1.5211,
+      "bezocht": false,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1DcmuOvP4FZx2IIOxy1c-QQhG9Tf3J6bJ"
+    },
+    {
+      "land": "België",
+      "stad": "Brussel",
+      "lat": 50.8503,
+      "lon": 4.3517,
+      "bezocht": true,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1rI6Fk3l2rs3Ys9X1qmSZbkfObnWokdsB"
+    },
+    {
+      "land": "Bosnië en Herzegovina",
+      "stad": "Sarajevo",
+      "lat": 43.8563,
+      "lon": 18.4131,
+      "bezocht": false,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1CBmc9nSAmpd_r049fRsDp-H76mdgCnJb"
+    },
+    {
+      "land": "Bulgarije",
+      "stad": "Sofia",
+      "lat": 42.6977,
+      "lon": 23.3219,
+      "bezocht": false,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1n6ZuIWYkN0YxOWN7ToAoIISfbTmu93WO"
+    },
+    {
+      "land": "Denemarken",
+      "stad": "Kopenhagen",
+      "lat": 55.6761,
+      "lon": 12.5683,
+      "bezocht": true,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1Kb5Vx_QYmvfdZ5atRWMu_WQvmaWNDV6u"
+    },
+    {
+      "land": "Duitsland",
+      "stad": "Berlijn",
+      "lat": 52.52,
+      "lon": 13.405,
+      "bezocht": true,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1ac-oIQVb6b9zkkncvhkUJ8us98YMYppa"
+    },
+    {
+      "land": "Estland",
+      "stad": "Tallinn",
+      "lat": 59.437,
+      "lon": 24.7536,
+      "bezocht": true,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/177xNMnVetw8yG8HyX9rY9UL4kHQSb4at"
+    },
+    {
+      "land": "Finland",
+      "stad": "Helsinki",
+      "lat": 60.1699,
+      "lon": 24.9384,
+      "bezocht": true,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1UP17vtmGzHdcFcBg0YzuyoKCQAGRSSTD"
+    },
+    {
+      "land": "Frankrijk",
+      "stad": "Parijs",
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "bezocht": true,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1psUzJJPyovNLLO2Yfb_oD0E-Yq7Jrred"
+    },
+    {
+      "land": "Griekenland",
+      "stad": "Athene",
+      "lat": 37.9838,
+      "lon": 23.7275,
+      "bezocht": true,
+      "beschrijving": "Culturele stad, maar groep vooral in kroegen en strand. Dior-zonnebrillen, SLOW-bar, record duur bier (€9).",
+      "gdrive": "https://drive.google.com/drive/folders/1pCuoXHi1UKxrDfuv0njVt3QY9yaWWS54"
+    },
+    {
+      "land": "Hongarije",
+      "stad": "Boedapest",
+      "lat": 47.4979,
+      "lon": 19.0402,
+      "bezocht": true,
+      "beschrijving": "Bratis-slaafse boetedoening, veel kroegen, goedkope drank, eerste keer structurele Oostblok-reis.",
+      "gdrive": "https://drive.google.com/drive/folders/1HpAcyV_QqLs9hepckKLEIntl_3lUI_Wy"
+    },
+    {
+      "land": "Ierland",
+      "stad": "Dublin",
+      "lat": 53.3331,
+      "lon": -6.2489,
+      "bezocht": true,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1N9ELlrP3Q2HfxqLaF3E2x2-Hz0RXAXA6"
+    },
+    {
+      "land": "IJsland",
+      "stad": "Reykjavik",
+      "lat": 64.1355,
+      "lon": -21.8954,
+      "bezocht": true,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1NxRgI8Rb-tiOHLNncxp1Y0B5HTUQYE-F"
+    },
+    {
+      "land": "Italië",
+      "stad": "Rome",
+      "lat": 41.9028,
+      "lon": 12.4964,
+      "bezocht": true,
+      "beschrijving": "Camping met zwembad, bezoek Vaticaanstad (grapjes over Leo), nacht in ZOO-bar, gangsterkroeg, Fiat Multipla paste hele groep. Souvenir: vleermuis.",
+      "gdrive": "https://drive.google.com/drive/folders/1IOPpvvENOBW4pGIHV2T8rPE1RENxKP6x"
+    },
+    {
+      "land": "Joegoslavië",
+      "stad": "Belgrado",
+      "lat": 44.8176,
+      "lon": 20.4569,
+      "bezocht": true,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1KXUIXQZa6QNJAOvt8vw5xVl2lAdgZ4rc"
+    },
+    {
+      "land": "Kroatië",
+      "stad": "Zagreb",
+      "lat": 45.815,
+      "lon": 15.9819,
+      "bezocht": false,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1MP1TlEuCyfTIsaIGrjRsYESLNhzFB6_4"
+    },
+    {
+      "land": "Letland",
+      "stad": "Riga",
+      "lat": 56.9496,
+      "lon": 24.1052,
+      "bezocht": true,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1EnLLkFSMBHdusWKjesdM4hXE_e7uwhEV"
+    },
+    {
+      "land": "Liechtenstein",
+      "stad": "Vaduz",
+      "lat": 47.1416,
+      "lon": 9.5215,
+      "bezocht": true,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1Dz5-wvpimg7_c67qFwy7ryD7aCVze_Bc"
+    },
+    {
+      "land": "Litouwen",
+      "stad": "Vilnius",
+      "lat": 54.6872,
+      "lon": 25.2797,
+      "bezocht": false,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1Udqy3eVOsVdQswlZMNvnnhpqLDpGEg3d"
+    },
+    {
+      "land": "Luxemburg",
+      "stad": "Luxemburg",
+      "lat": 49.6117,
+      "lon": 6.1319,
+      "bezocht": true,
+      "beschrijving": "Kamperen buiten stad, graanvelden, karaoke bar als stamcafé, ontdekking dat vrouwen ook staand plassen. Souvenir: cd-hoes sleutelhanger.",
+      "gdrive": "https://drive.google.com/drive/folders/1NMT5oGNK3YdLKM-CpEaOsfK828ZkZ5Pa"
+    },
+    {
+      "land": "Macedonië",
+      "stad": "Skopje",
+      "lat": 41.9981,
+      "lon": 21.4254,
+      "bezocht": false,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1Fr7EVICm1dR5t8zZPcD5wcak0ad71rg9"
+    },
+    {
+      "land": "Malta",
+      "stad": "Valletta",
+      "lat": 35.8997,
+      "lon": 14.5146,
+      "bezocht": true,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1Xa3TZt9YrZk-J_YNdJx5VRmHJtEBO-An"
+    },
+    {
+      "land": "Moldavië",
+      "stad": "Chisinau",
+      "lat": 47.0105,
+      "lon": 28.8638,
+      "bezocht": false,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1vytpSRPpbluGJCbC313kWCe6vSSJ2KeL"
+    },
+    {
+      "land": "Monaco",
+      "stad": "Monaco",
+      "lat": 43.7384,
+      "lon": 7.4246,
+      "bezocht": false,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1xza3wS7SUTLONJra8aQFcNapkabb4gnJ"
+    },
+    {
+      "land": "Nederland",
+      "stad": "Amsterdam",
+      "lat": 52.3676,
+      "lon": 4.9041,
+      "bezocht": true,
+      "beschrijving": "Startpunt van de reis, kort verkend bij vertrek naar Londen. Begin van traditie van jaarlijks vriendenreisje.",
+      "gdrive": "https://drive.google.com/drive/folders/1tv6EPYerJ4xMRlM9G_L8X6Nmja3T6Lgr"
+    },
+    {
+      "land": "Noorwegen",
+      "stad": "Oslo",
+      "lat": 59.9139,
+      "lon": 10.7522,
+      "bezocht": true,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1sRk5UKCH1QbPL-4K-O10x5ZTpVDUq7AK"
+    },
+    {
+      "land": "Oostenrijk",
+      "stad": "Wenen",
+      "lat": 48.2082,
+      "lon": 16.3738,
+      "bezocht": true,
+      "beschrijving": "Trips vanuit Bratislava, nachtelijke verdwaaltochten en karaoke. Motto: Oostblok eerst afwerken.",
+      "gdrive": "https://drive.google.com/drive/folders/1B5MEKpY3RIngv1c09Pvw6ImNBarP2tJB"
+    },
+    {
+      "land": "Polen",
+      "stad": "Warschau",
+      "lat": 52.2297,
+      "lon": 21.0122,
+      "bezocht": false,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1Uae_hXi1OCSHmX_EYpzKdibJoC8oWk6c"
+    },
+    {
+      "land": "Portugal",
+      "stad": "Lissabon",
+      "lat": 38.7169,
+      "lon": -9.139,
+      "bezocht": true,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1_gQJVTJCYxfldJ-Y8i0Vfkklhmybhe6M"
+    },
+    {
+      "land": "Roemenië",
+      "stad": "Boekarest",
+      "lat": 44.4268,
+      "lon": 26.1025,
+      "bezocht": true,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1ScfoKG-vkVDUuOYkjqTGs8zEQxgrOEOT"
+    },
+    {
+      "land": "Rusland",
+      "stad": "Moskou",
+      "lat": 55.7558,
+      "lon": 37.6173,
+      "bezocht": true,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1oioG3dJEAzrhBg3WU1LFb0s421xmmRnD"
+    },
+    {
+      "land": "San Marino",
+      "stad": "San Marino",
+      "lat": 43.9336,
+      "lon": 12.4508,
+      "bezocht": false,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/111w2hPrU4f8p2iCqq-1OSZsCwaVyTJWI"
+    },
+    {
+      "land": "Slovenië",
+      "stad": "Ljubljana",
+      "lat": 46.0569,
+      "lon": 14.5058,
+      "bezocht": false,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1e9o1WCZZKiocnfZEqmFlfQU9q4yg28z2"
+    },
+    {
+      "land": "Slowakije",
+      "stad": "Bratislava",
+      "lat": 48.1486,
+      "lon": 17.1077,
+      "bezocht": true,
+      "beschrijving": "Hotel geboekt door Einte, veel drank in hotelbar, trips naar Wenen, karaoke-avonden. Oostblok eerst aanpakken voor het duurder wordt.",
+      "gdrive": "https://drive.google.com/drive/folders/1HAUSjMm1ITiT6b4wYZ_MF1KpDW10Pc4w"
+    },
+    {
+      "land": "Spanje",
+      "stad": "Madrid",
+      "lat": 40.4168,
+      "lon": -3.7038,
+      "bezocht": true,
+      "beschrijving": "Bezoek aan Gertjan, goedkoop bier (90 Pts), Tinto de Verano ontdekt, brand geblust, polonaise in dorp. Souvenir: pluizig sleutelhangerbeestje.",
+      "gdrive": "https://drive.google.com/drive/folders/1qfNtFYe9GUT6WWiQfU_wVBDfJdqyUooT"
+    },
+    {
+      "land": "Tsjechië",
+      "stad": "Praag",
+      "lat": 50.0755,
+      "lon": 14.4378,
+      "bezocht": true,
+      "beschrijving": "Reis in de 'UFO', slapen lastig, Bananenbar, lasergamen, bezoek Theresiënstadt. Binne won bingo, Einte niet. Souvenir: sigarenbandje.",
+      "gdrive": "https://drive.google.com/drive/folders/19kVeo1RYNIuEzSm3mcSUkohmEMic2UMe"
+    },
+    {
+      "land": "Vaticaanstad",
+      "stad": "Vaticaanstad",
+      "lat": 41.9029,
+      "lon": 12.4534,
+      "bezocht": true,
+      "beschrijving": "Bezoek tijdens Rome-trip: veel grapjes over paus Leo. Onderdeel van 'ZOO-bar' en campingervaring.",
+      "gdrive": "https://drive.google.com/drive/folders/1IhvDtttzCv6uL3VbOet_R0axRq7EfRnD"
+    },
+    {
+      "land": "Verenigd Koninkrijk",
+      "stad": "Londen",
+      "lat": 51.5072,
+      "lon": -0.1276,
+      "bezocht": true,
+      "beschrijving": "Start in Londen: chaos op Schiphol, hostel 'Golden Shower', potloodventer in park, slagschip op Thames, Rad van WEL v.s. NIET.",
+      "gdrive": "https://drive.google.com/drive/folders/1Os01Qv6QdLRR0UjotK7-dfu74pvCWChu"
+    },
+    {
+      "land": "Wit-Rusland",
+      "stad": "Minsk",
+      "lat": 53.9006,
+      "lon": 27.559,
+      "bezocht": false,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1wEjaoOzgInstXwHllPOznFyWbIBocW_P"
+    },
+    {
+      "land": "Zwitserland",
+      "stad": "Bern",
+      "lat": 46.9481,
+      "lon": 7.4474,
+      "bezocht": false,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1lVmXSpA6atz-x54BqiCCLeG7kXhHLLn_"
+    },
+    {
+      "land": "Zweden",
+      "stad": "Stockholm",
+      "lat": 59.3293,
+      "lon": 18.0686,
+      "bezocht": true,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1zhHCAe-ca8lMawoyRGWFCrKC-NJWmm1j"
+    },
+    {
+      "land": "Oekraïne",
+      "stad": "Kiev",
+      "lat": 50.4501,
+      "lon": 30.5234,
+      "bezocht": false,
+      "beschrijving": "",
+      "gdrive": "https://drive.google.com/drive/folders/1Pc9-LOHd4lsG2Qd_ByLA0rFT0P2xgrES"
+    }
+  ],
+  "routes": {}
+}
