@@ -1,51 +1,77 @@
 import os
 import folium
 import pandas as pd
+import re
+import json
+from googleapiclient.discovery import build
+from google.oauth2 import service_account
 
-# Basisdir = de map waar dit script staat
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-# Excel-bestand met data
 excel_file = os.path.join(BASE_DIR, "Europese_Hoofdsteden_1999_met_IDs.xlsx")
 
-# Lees Excel in
-df = pd.read_excel(excel_file)
+# Lees credentials uit GitHub Secret
+creds_json = os.environ.get("GDRIVE_CREDENTIALS")
+if not creds_json:
+    raise RuntimeError("❌ Geen GDRIVE_CREDENTIALS secret gevonden")
 
-# Maak kaart
+creds_dict = json.loads(creds_json)
+
+SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
+creds = service_account.Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
+service = build('drive', 'v3', credentials=creds)
+
+def get_first_photo_from_folder(folder_id):
+    query = f"'{folder_id}' in parents and (mimeType contains 'image/jpeg' or mimeType contains 'image/png')"
+    results = service.files().list(
+        q=query, orderBy="createdTime asc", pageSize=1, fields="files(id,name)"
+    ).execute()
+    files = results.get('files', [])
+    if files:
+        file_id = files[0]['id']
+        return f"https://drive.google.com/uc?export=view&id={file_id}"
+    return None
+
+def gdrive_file_id(url):
+    if not isinstance(url, str):
+        return None, None
+    match = re.search(r"/d/([a-zA-Z0-9_-]+)", url)
+    if match:
+        return match.group(1), "file"
+    match = re.search(r"folders/([a-zA-Z0-9_-]+)", url)
+    if match:
+        return match.group(1), "folder"
+    return None, None
+
+df = pd.read_excel(excel_file)
+df["FotoURL"] = None
+
 m = folium.Map(location=[54, 15], zoom_start=4)
 
-for _, row in df.iterrows():
+for idx, row in df.iterrows():
     land = row["Land"]
     stad = row["Hoofdstad"]
-    lat = row["Lat"]
-    lon = row["Lon"]
+    lat, lon = row["Lat"], row["Lon"]
     bezocht = str(row.get("Bezocht", "")).strip().upper()
     gdrive = row.get("GoogleDriveURL", "")
 
+    foto_url = None
+    if gdrive:
+        file_id, kind = gdrive_file_id(gdrive)
+        if kind == "file":
+            foto_url = f"https://drive.google.com/uc?export=view&id={file_id}"
+        elif kind == "folder":
+            foto_url = get_first_photo_from_folder(file_id)
+
+    df.at[idx, "FotoURL"] = foto_url
+
     if pd.notna(lat) and pd.notna(lon):
-        # marker kleur
         color = "green" if bezocht == "X" else "red"
-
-        # zoek foto in folder die gelijk heet aan de hoofdstad
-        photo_path = None
-        city_folder = os.path.join(BASE_DIR, stad)
-        if os.path.exists(city_folder):
-            for f in os.listdir(city_folder):
-                if f.lower().endswith((".jpg", ".jpeg", ".png")):
-                    photo_path = os.path.join(city_folder, f)
-                    break
-
-        # popup html
         popup_html = f"<b>{stad}, {land}</b><br>"
         popup_html += f"Bezocht: {'Ja' if color=='green' else 'Nee'}<br>"
-
-        if gdrive and isinstance(gdrive, str):
+        if gdrive:
             popup_html += f"<a href='{gdrive}' target='_blank'>📂 Google Drive map</a><br>"
-
-        if photo_path:
-            rel_path = os.path.relpath(photo_path, BASE_DIR)
-            popup_html += f"<img src='{rel_path}' width='250'><br>"
-
+        if foto_url:
+            popup_html += f"<img src='{foto_url}' width='250'><br>"
         folium.Marker(
             location=[lat, lon],
             popup=folium.Popup(popup_html, max_width=300),
@@ -53,7 +79,9 @@ for _, row in df.iterrows():
             icon=folium.Icon(color=color)
         ).add_to(m)
 
-# opslaan
-out_file = os.path.join(BASE_DIR, "europese_hoofdsteden.html")
+# Output
+out_file = os.path.join(BASE_DIR, "index.html")
 m.save(out_file)
-print(f"✅ Kaart opgeslagen: {out_file}")
+df.to_excel(os.path.join(BASE_DIR, "Europese_Hoofdsteden_met_Fotos.xlsx"), index=False)
+print(f"✅ Kaart en Excel gegenereerd")
+
