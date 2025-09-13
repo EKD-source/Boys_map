@@ -84,4 +84,3 @@ out_file = os.path.join(BASE_DIR, "index.html")
 m.save(out_file)
 df.to_excel(os.path.join(BASE_DIR, "Europese_Hoofdsteden_met_Fotos.xlsx"), index=False)
 print(f"✅ Kaart en Excel gegenereerd")
-
